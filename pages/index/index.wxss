@@ -1,0 +1,86 @@
+page {
+  width: 100%;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  color: #333;
+  font-size: 26rpx;
+}
+.slider {
+  margin: 0 auto;
+}
+.slider slider {
+  width: 600rpx;
+}
+.title_wrap {
+  text-align: center;
+  margin: 50rpx 0 80rpx;
+}
+.title_wrap .title_text {
+  color: #ccc;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.task_content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20rpx;
+}
+.task_content .task_item {
+  margin-bottom: 50rpx;
+  width: 33.33%;
+  text-align: center;
+}
+.task_content .task_item image {
+  width: 25%;
+  margin-bottom: 20rpx;
+}
+.task_content .active {
+  color: var(--themeColor);
+}
+.btn {
+  border: 1px solid currentColor;
+  border-radius: 15rpx;
+  padding: 25rpx;
+  width: 180rpx;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--themeColor);
+  font-size: 32rpx;
+}
+.start {
+  background: var(--themeColor);
+  height: 3000rpx;
+}
+.clock .canvas_wrap {
+  width: 400rpx;
+  height: 400rpx;
+  position: relative;
+  margin: 80rpx auto;
+}
+.clock .canvas_wrap .progess_bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.clock .canvas_wrap .progess_active {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.clock .canvas_wrap .progess_text {
+  width: 200rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}

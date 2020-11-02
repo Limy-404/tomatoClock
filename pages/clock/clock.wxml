@@ -1,0 +1,18 @@
+<view class="clock">
+  <view class="canvas_wrap">
+    <canvas class="progess_bg" canvas-id='progess_bg'></canvas>
+    <canvas class="progess_active" canvas-id='progess_active'></canvas>
+    <view class="progess_text">{{timeStr}}</view>
+  </view>
+  <view class="btn_wrap">
+    <block wx:if='{{flag}}'>
+      <view class="stop_btn" bindtap='handlePause'>暂停</view>
+    </block>
+    <block wx:else>
+      <view class="continueCancle_wrap">
+        <view class="continue_btn" bindtap='handleContinue'>继续</view>
+        <view class="cancle_btn" bindtap='handleCancle'>放弃</view>
+      </view>
+    </block>
+  </view>
+</view>

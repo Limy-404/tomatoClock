@@ -1,0 +1,34 @@
+{
+  "pages":[
+    
+    "pages/index/index",
+    "pages/clock/clock",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "color":"#ccc",
+    "selectedColor": "#333",
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabbar/shizhong.png",
+        "selectedIconPath": "images/tabbar/shizhong_active.png",
+        "text":"计时"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "images/tabbar/tongji.png",
+        "selectedIconPath": "images/tabbar/tongji_active.png",
+        "text":"计时"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#e7624f",
+    "navigationBarTitleText": "Click",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

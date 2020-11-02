@@ -1,0 +1,59 @@
+/* pages/clock/clock.wxss */
+page {
+  height: 100%;
+  width: 100%;
+  background: var(--themeColor);
+}
+.clock .canvas_wrap {
+  width: 400rpx;
+  height: 400rpx;
+  position: relative;
+  margin: 80rpx auto;
+}
+.clock .canvas_wrap .progess_bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.clock .canvas_wrap .progess_active {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.clock .canvas_wrap .progess_text {
+  width: 200rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+.clock .btn_wrap .stop_btn {
+  color: #fff;
+  border: 4rpx solid currentColor;
+  border-radius: 10rpx;
+  width: 180rpx;
+  padding: 20rpx;
+  text-align: center;
+  margin: 200rpx auto;
+  font-size: 32rpx;
+}
+.clock .continueCancle_wrap .continue_btn,
+.clock .continueCancle_wrap .cancle_btn {
+  width: 180rpx;
+  padding: 20rpx;
+  color: #fff;
+  border: 4rpx solid currentColor;
+  border-radius: 10rpx;
+  font-size: 32rpx;
+  text-align: center;
+  margin: 200rpx auto 0;
+}
+.clock .continueCancle_wrap .cancle_btn {
+  margin: 20rpx auto;
+}

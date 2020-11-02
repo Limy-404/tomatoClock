@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="content">
+    <view class="slider">
+      <slider min='1' max='60' activeColor='#e7624f' show-value backgroundColor='#666' value='{{time}}' bindchange='sliderChange'></slider>
+    </view>
+    <view class="title_wrap">
+      <view class="title">选择一个任务</view>
+      <view class="title_text">在接下来的{{time}}分钟，专注地做这件事</view>
+    </view>
+    <view class="task_content">
+      <view class="task_item {{index===currentIndex? ' active':''}}" 
+      wx:for='{{clockList}}'
+      wx:key='{{index}}'
+      bindtap='handleItemTap'
+      data-index='{{index}}'
+      >
+        <view class="icon">
+          <image src='../../images/{{item.icon}}.png' mode='widthFix'></image>
+        </view>
+        <view class="task_name">{{item.text}}</view>
+      </view>
+    </view>
+    <view class="btn"
+    bindtap='handleStart'
+    >开始专注</view>
+  </view>
+  <view class="canvas_wrap">
+    <canvas class="progess_bg" canvas-id='progess_bg'></canvas>
+    <canvas class="progess_active" canvas-id='progess_active'></canvas>
+    <view class="progess_text">{{timeStr}}</view>
+  </view>
+</view>
